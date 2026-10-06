@@ -53,9 +53,9 @@ export function applyOperation(surface,op){const run=new OperationRunner(surface
 // stops at the boundary. Capped elapsed time avoids jumps after hidden tabs.
 export class RecipeReplay {
   constructor(surface,{onFrame=()=>{},onState=()=>{},onComplete=()=>{},requestFrame=fn=>requestAnimationFrame(fn),cancelFrame=id=>cancelAnimationFrame(id)}={}){
-    Object.assign(this,{surface,onFrame,onState,onComplete,requestFrame,cancelFrame});this.active=false;this.playing=false;this.speed=.5;this.generation=0;
+    Object.assign(this,{surface,onFrame,onState,onComplete,requestFrame,cancelFrame});this.active=false;this.playing=false;this.speed=1;this.generation=0;
   }
-  start(commands){this.cancel();this.commands=commands;this.index=0;this.runner=null;this.gap=0;this.active=true;this.playing=true;this.stopAtBoundary=false;this.last=null;this.surface.reset();this.onState();this.schedule();}
+  start(commands){this.cancel();this.speed=1;this.commands=commands;this.index=0;this.runner=null;this.gap=0;this.active=true;this.playing=true;this.stopAtBoundary=false;this.last=null;this.surface.reset();this.onState();this.schedule();}
   schedule(){if(!this.active||!this.playing||this.frame!=null)return;const token=this.generation;this.frame=this.requestFrame(time=>{this.frame=null;if(token!==this.generation)return;this.tick(time);});}
   tick(time){
     if(!this.active||!this.playing)return;

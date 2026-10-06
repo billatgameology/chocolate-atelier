@@ -24,7 +24,7 @@ From this folder, run `npm start` (Python 3), then open http://127.0.0.1:4173. A
 
 ## Use
 
-Choose one of six recipes. Switch between the piped base and finished art. Replay draws each line and skewer pull progressively, following a visible tool tip. It defaults to slow ½× playback, with 1× and 2× options. Pause preserves a partial stroke; Finish stroke animates its remainder, and Next stroke animates one subsequent command. Use Drop, Pipe or Drag to make your own composition. Rotation repeats your gesture 2, 4 or 8 times. Undo and redo work on whole gestures. Save image exports a 1200px PNG using the current 512px surface; this enlarges the raster rather than adding simulated detail.
+Choose one of six recipes. Switch between the piped base and finished art. Replay draws each line and skewer pull progressively, following a visible tool tip. Every fresh replay starts at normal 1× speed, with ½× and 2× options during playback. Click “See how it’s made” or its play icon to restart from the beginning, including after completion. Pause preserves a partial stroke; Finish stroke animates its remainder, and Next stroke animates one subsequent command. Use Drop, Pipe or Drag to make your own composition. Rotation repeats your gesture 2, 4 or 8 times. Undo and redo work on whole gestures. Save image exports a 1200px PNG using the current 512px surface; this enlarges the raster rather than adding simulated detail.
 
 “Study the reel” provides original stills, procedural recreations, observed technique notes and model limitations. Recipe names are descriptive labels created for this app, not titles from the artist.
 
