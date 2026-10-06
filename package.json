@@ -1,0 +1,11 @@
+{
+  "name": "chocolate-atelier",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "python3 -m http.server 4173 --bind 127.0.0.1 --directory public",
+    "check": "node --check public/app.js && node --check public/engine.js && node --check public/recipes.js && node --check public/operations.js",
+    "test": "node tests/engine.test.mjs"
+  }
+}

@@ -1,0 +1,27 @@
+Chocolate Atelier — GitHub Pages
+
+PUBLIC WEBSITE
+https://billatgameology.github.io/chocolate-atelier/
+
+SOURCE REPOSITORY
+https://github.com/billatgameology/chocolate-atelier
+
+UPDATE THE WEBSITE
+1. Edit the files in public/.
+2. Run npm start and preview http://127.0.0.1:4173.
+3. Run npm run check and npm test.
+4. Commit your changes and push to main.
+5. Check the repository's Actions tab for the deployment result.
+
+GitHub Actions publishes public/ after the checks pass. No build command,
+dependency installation, API key, server application, or database is needed.
+Settings > Pages > Source must be set to GitHub Actions.
+
+The site is public; visitors do not need a GitHub or ChatGPT account.
+All six recipes, drawing tools, replay, and image export run in the browser.
+
+OTHER STATIC HOSTS
+Upload the contents of public/ to the host's publishing directory. Keep all
+files together and serve them through HTTP or HTTPS; opening index.html
+directly from disk may block JavaScript modules. Relative asset paths also
+allow the app to run in a subfolder. Google Fonts are optional.
